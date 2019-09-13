@@ -1,4 +1,4 @@
-package pla1;
+package pla1.ejercicios;
 
 import java.util.Arrays;
 import java.util.Scanner;

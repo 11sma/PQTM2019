@@ -1,4 +1,4 @@
-package pla2;
+package pla2.ejercicios;
 
 public class Clientes implements Saludo {
 
