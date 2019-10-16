@@ -17,8 +17,8 @@ public class Jugador {
 		cartas.add(carta);
 	}
 	
-	public void retirarCarta(Integer indice) {
-		cartas.remove(indice.intValue());
+	public Carta retirarCarta(Integer indice) {
+		return cartas.remove(indice.intValue());
 	}
 	
 	public String juego() {
