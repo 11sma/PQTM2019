@@ -6,4 +6,5 @@ public interface DB {
 	
 	public void close();
 	
+	public Object getCon();
 }

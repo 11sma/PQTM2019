@@ -8,15 +8,15 @@ import java.sql.Statement;
 
 public class MySQL implements DB{
 
-	String cadConexion = "jdbc:mysql://192.168.1.137:3306/";
+	private String cadConexion = "jdbc:mysql://localhost:3306/";
 
-	String bd = "mydb";
+	private String bd = "mydb";
 
-	String usuario = "pma";
+	private String usuario = "root";
 
-	String pass = "";
+	private String pass = "";
 	
-	Connection con;
+	private Connection con;
 
 	public MySQL() {
 		try {
@@ -29,7 +29,7 @@ public class MySQL implements DB{
 	
 	@Override
 	public void query(String query, String idField, String field) {
-			
+		
 		Statement stmt;
 
 		try {
@@ -54,5 +54,15 @@ public class MySQL implements DB{
 			e.printStackTrace();
 		}
 	}
+
+	public Connection getCon() {
+		return con;
+	}
+
+	public void setCon(Connection con) {
+		this.con = con;
+	}
+	
+	
 
 }
